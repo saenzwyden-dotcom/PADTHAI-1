@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background:#120018;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+    background:rgba(18,0,24,.7);
+    z-index:100;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#c77dff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:50px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:500px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    padding:15px 30px;
+    border:none;
+    background:#9d4edd;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.hero-bowl{
+    font-size:12rem;
+    animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    padding:80px 20px;
+    background:#1f0129;
+}
+
+.stats h2{
+    color:#c77dff;
+    font-size:3rem;
+}
+
+.menu{
+    padding:100px 10%;
+}
+
+.menu h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#2a0139;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.builder{
+    text-align:center;
+    padding:100px 20px;
+    background:#1f0129;
+}
+
+.builder select{
+    padding:15px;
+    margin:10px;
+}
+
+.builder button{
+    padding:15px 30px;
+    background:#9d4edd;
+    border:none;
+    color:white;
+    border-radius:10px;
+}
+
+#result{
+    margin-top:30px;
+    color:#c77dff;
+}
+
+.reviews{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.review-box{
+    max-width:700px;
+    margin:auto;
+    background:#2a0139;
+    padding:30px;
+    border-radius:20px;
+}
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero-bowl{
+        font-size:8rem;
+    }
+
+    .stats{
+        flex-direction:column;
+        text-align:center;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Pad Thai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🍜 Purple Pad Thai</div>
+
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#builder">Build Bowl</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-text">
+        <h1>Thailand's Street Flavor.<br>Reimagined in Purple.</h1>
+
+        <p>
+            Fresh noodles, wok-fired perfection, and unforgettable flavors.
+        </p>
+
+        <button>Order Now</button>
+    </div>
+
+    <div class="hero-bowl">
+        🍜
+    </div>
+</header>
+
+<section class="stats">
+    <div>
+        <h2 id="orders">0</h2>
+        <p>Bowls Served</p>
+    </div>
+
+    <div>
+        <h2>15+</h2>
+        <p>Signature Recipes</p>
+    </div>
+
+    <div>
+        <h2>4.9★</h2>
+        <p>Customer Rating</p>
+    </div>
+</section>
+
+<section id="menu" class="menu">
+    <h2>Chef's Favorites</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Classic Pad Thai</h3>
+            <p>Sweet, savory, perfectly balanced.</p>
+        </div>
+
+        <div class="card">
+            <h3>Purple Dragon Noodles</h3>
+            <p>Spicy noodles with butterfly pea infusion.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mango Chili Chicken</h3>
+            <p>Sweet heat with Thai herbs.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="builder" class="builder">
+    <h2>Build Your Pad Thai</h2>
+
+    <select id="protein">
+        <option>Chicken</option>
+        <option>Beef</option>
+        <option>Shrimp</option>
+        <option>Tofu</option>
+    </select>
+
+    <select id="spice">
+        <option>Mild 🌶️</option>
+        <option>Medium 🌶️🌶️</option>
+        <option>Hot 🌶️🌶️🌶️</option>
+    </select>
+
+    <button onclick="generateOrder()">
+        Create My Bowl
+    </button>
+
+    <h3 id="result"></h3>
+</section>
+
+<section id="reviews" class="reviews">
+    <h2>What People Say</h2>
+
+    <div class="review-box">
+        <p id="reviewText">
+            "Best Pad Thai I've ever had."
+        </p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
